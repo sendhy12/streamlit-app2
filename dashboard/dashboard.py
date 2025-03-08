@@ -7,7 +7,7 @@ sns.set(style='whitegrid')
 st.set_page_config(page_title="Air Quality Dashboard", layout="wide")
 
 # Load Data
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv("dashboard/main_data.csv")
 df['datetime'] = pd.to_datetime(df['datetime'])
 df['year'] = df['datetime'].dt.year
 
